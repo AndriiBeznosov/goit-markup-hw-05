@@ -667,6 +667,9 @@ header .activ::after {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -699,6 +702,7 @@ header .activ::after {
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .backdrop-icon {
   width: 18px;
